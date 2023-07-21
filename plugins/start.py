@@ -13,7 +13,9 @@ from helper.database import insert, find_one, used_limit, usertype, uploadlimit,
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import check_expi
-import os
+import random
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
+from helper.database import db
 
 CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")

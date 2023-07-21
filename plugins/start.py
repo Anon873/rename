@@ -200,7 +200,7 @@ async def send_doc(client, message):
                 [[InlineKeyboardButton("📝 Rename", callback_data="rename"),
                   InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
 
-        elif data == "help":
+          elif data == "help":
         await query.message.edit_text(
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,

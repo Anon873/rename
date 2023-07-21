@@ -124,7 +124,7 @@ async def send_doc(client, message):
         user_type = user_deta["usertype"]
     except:
         await message.reply_text(text=f"Hello dear {message.from_user.first_name}  **we are currently working on this issue**\n\nPlease try to rename files from your another account.\nBecause this BOT can't rename file sent by some ids.\n\nIf you are an **ADMIN** Don't worry ! here we have a solution for you dear {message.from_user.first_name }.\n\nPlease use \n👉 `/addpremium your_other_userid` 👈 to use premium feautres\n\n",
-                                  reply_markup=InlineKeyboardMarkup([
+                                  reply_markup=InlineKeyboardMarkup(
                                                                 [[InlineKeyboardButton("🔺 Support Group 🔺", url="https://t.me/ShadowSupportX")],
                                                                 [InlineKeyboardButton("Developer", url='https://t.me/it_was_abhi')]
                                                                 ]))

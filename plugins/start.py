@@ -60,10 +60,9 @@ async def start(client, message):
         InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/shadowsupportx')
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
-    ]]))
-
-
-    elif data == "help":
+    ]])
+		)
+     elif data == "help":
         await query.message.edit_text(
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,

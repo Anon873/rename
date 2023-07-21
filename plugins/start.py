@@ -61,6 +61,22 @@ async def start(client, message):
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
     ]]))
+
+
+    elif data == "help":
+        await query.message.edit_text(
+            text=Txt.HELP_TXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton("ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ", callback_data="custom")
+                ],[
+                InlineKeyboardButton("ᴛʜᴜᴍʙɴᴀɪʟ", callback_data="thumb"),
+                InlineKeyboardButton("ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ", callback_data="rename")
+                ],[
+                InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "start")
+    ]])
+        )
         return
     if id:
         if old == True:

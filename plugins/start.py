@@ -3,9 +3,10 @@ import datetime
 import os
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 import time
+import random
 from pyrogram import Client, filters
 from pyrogram.types import (
-    InlineKeyboardButton, InlineKeyboardMarkup)
+    InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery)
 import humanize
 from helper.progress import humanbytes
 
@@ -13,8 +14,6 @@ from helper.database import insert, find_one, used_limit, usertype, uploadlimit,
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import check_expi
-import random
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from helper.database import db
 
 CHANNEL = os.environ.get('CHANNEL', "")
@@ -200,7 +199,7 @@ async def send_doc(client, message):
                 [[InlineKeyboardButton("📝 Rename", callback_data="rename"),
                   InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
 
-          elif data == "help":
+    elif data == "help":
         await query.message.edit_text(
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,
@@ -211,8 +210,8 @@ async def send_doc(client, message):
                 InlineKeyboardButton("ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ", callback_data="rename")
                 ],[
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "start")
-	    ]])
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "pvtstart")
+    ]])
         )
 	    elif data == "about":
         await query.message.edit_text(

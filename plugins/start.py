@@ -46,7 +46,15 @@ async def start(client, message):
         id = message.text.split(' ')[1]
     except:
         txt=f"""Hello {wish} {message.from_user.first_name } \n\n
-	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
+	/start - Check if the bot is running. 
+        /viewthumb - To view current thumbnail. 
+	/delthumb - To delete current thumbnail. 
+        /set_caption - set a custom caption. 
+        /see_caption - see your custom caption. 
+	/del_caption - delete custom caption. 
+        /myplan - To view users current plan. 
+	/about - To view bot current status 
+        /upgrade - To view all plans with price list of SILVER - GOLD - DIAMOND.""" 
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(

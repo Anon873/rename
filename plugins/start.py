@@ -59,7 +59,7 @@ async def start(client, message):
         InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/shadowsupportx')
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
-    ]])
+    ]]))
         return
     if id:
         if old == True:

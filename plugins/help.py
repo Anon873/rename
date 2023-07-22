@@ -18,7 +18,6 @@ async def start(client, message):
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
     ]])
-    if Config.START_PIC:
         await message.reply_photo(photo=ABHI_PIC, caption=Txt.START_TXT, reply_markup=button)       
     else:
         await message.reply_text(text=Txt.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)

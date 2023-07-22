@@ -12,7 +12,7 @@ async def start(client, message):
     (client, message)
     await message.reply_photo(
         photo=ABHI_PIC,
-        caption=Txt.START_TXT
+        caption=Txt.START_TXT,
     reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
         ],[

@@ -20,7 +20,7 @@ async def start(client, message):
         InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/Shadowsupportx')
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
-    ]])
+    ]]))
    
 
 @Client.on_callback_query()

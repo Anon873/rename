@@ -60,7 +60,7 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "pvtstart")
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "help")
             ]])            
         )
     elif data == "dev":

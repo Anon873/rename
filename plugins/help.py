@@ -9,8 +9,11 @@ ABHI_PIC = "https://te.legra.ph/file/f02ef85e427fc4c775bf9.jpg"
 @Client.on_message(filters.private & filters.command("help")) 
 async def start(client, message):
     user = message.from_user
-    (client, message)                
-    button = InlineKeyboardMarkup([[
+    (client, message)
+    await message.reply_photo(
+        photo=ABHI_PIC,
+        caption=Txt.START_TXT
+    reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
         ],[
         InlineKeyboardButton('•ᴜᴘᴅᴀᴛᴇs•', url='https://t.me/All_Hindi_Anime'),
@@ -18,9 +21,6 @@ async def start(client, message):
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
     ]])
-        await message.reply_photo(photo=ABHI_PIC, caption=Txt.START_TXT, reply_markup=button)       
-    else:
-        await message.reply_text(text=Txt.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
    
 
 @Client.on_callback_query()

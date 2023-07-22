@@ -14,7 +14,7 @@ async def start(client, message):
         InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
         ],[
         InlineKeyboardButton('•ᴜᴘᴅᴀᴛᴇs•', url='https://t.me/All_Hindi_Anime'),
-        InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/botsupportx')
+        InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/Shadowsupportx')
         ],[
         InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
     ]])
@@ -35,7 +35,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
                 ],[
                 InlineKeyboardButton('•ᴜᴘᴅᴀᴛᴇs•', url='https://t.me/All_Hindi_Anime'),
-                InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/botsupportx')
+                InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/Shadowsupportx')
                 ],[
                 InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
     ]])
@@ -56,7 +56,7 @@ async def cb_handler(client, query: CallbackQuery):
         )
     elif data == "about":
         await query.message.edit_text(
-            text=Txt.ABOUT_TXT.format(client.mention),
+            text=Txt.ABOUT_TXT.format(client, message),
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #

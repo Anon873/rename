@@ -8,7 +8,7 @@ from config import Config
 @Client.on_message(filters.private & filters.command("help")) 
 async def start(client, message):
     user = message.from_user
-    await db.add_user(client, message)                
+    (client, message)                
     button = InlineKeyboardMarkup([[
         InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
         ],[

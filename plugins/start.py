@@ -19,7 +19,7 @@ from helper.database import db
 CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", 1484670284))
-bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
+bot_username = os.environ.get("BOT_USERNAME","SexcetBot")
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 token = os.environ.get('TOKEN', '')
 botid = token.split(':')[0]
@@ -66,30 +66,40 @@ async def start(client, message):
     if id:
         if old == True:
             try:
-                await client.send_message(id, "Your Friend is Already Using Our Bot")
+                await client.send_message(id, "Your Friend is Already Using the bot share with others.🥀")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
-                                         reply_markup=InlineKeyboardMarkup(
-                                              [[InlineKeyboardButton("🔺 Support Group 🔺", url="https://t.me/ShadowSupportX")],
-                                      [InlineKeyboardButton("Developer", url='https://t.me/it_was_abhi')]
-                                      ]))
+                                         reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
+        ],[
+        InlineKeyboardButton('•ᴜᴘᴅᴀᴛᴇs•', url='https://t.me/All_Hindi_Anime'),
+        InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/shadowsupportx')
+        ],[
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
+    ]])
+					 )
             except:
                 return
         else:
-            await client.send_message(id, "Congrats! You Won 100MB Upload limit")
+            await client.send_message(id, "Congrats! You Won 1Gb Upload limit")
             _user_ = find_one(int(id))
             limit = _user_["uploadlimit"]
-            new_limit = limit + 1073741824
+            new_limit = limit + 1288490188
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
 	Hello {wish} {message.from_user.first_name }\n\n
 	__I am file renamer bot, Please send any telegram 
 	**Document Or Video** and enter new filename to rename it__
 	""", reply_to_message_id=message.id,
-                                     reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("🔺 Support Group 🔺", url="https://t.me/ShadowSupportX")],
-                                      [InlineKeyboardButton("Developer", url='https://t.me/it_was_abhi')]
-                                      ]))
+                                     reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton("•ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs•", callback_data='help1')
+        ],[
+        InlineKeyboardButton('•ᴜᴘᴅᴀᴛᴇs•', url='https://t.me/All_Hindi_Anime'),
+        InlineKeyboardButton('•sᴜᴩᴩᴏʀᴛ•', url='https://t.me/shadowsupportx')
+        ],[
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ ᴜꜱ 🥀', callback_data='about')
+    ]])
+				    )
     
 
 

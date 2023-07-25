@@ -35,8 +35,8 @@ async def buypremium(bot, message):
 @Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["ceasepower"]))
 async def ceasepremium(bot, message):
 	await message.reply_text(" POWER CEASE MODE", quote=True, reply_markup=InlineKeyboardMarkup([
-		           [InlineKeyboardButton("•× Limit 500MB ×•", callback_data="cp1"),
-				    InlineKeyboardButton("•× Limit 100MB ×•", callback_data="cp2")
+		           [InlineKeyboardButton("•× Limit 1Gb ×•", callback_data="cp1"),
+				    InlineKeyboardButton("•× Limit 2Gb ×•", callback_data="cp2")
 				   ], [
 				    InlineKeyboardButton("•••× CEASE ALL POWER ×•••", callback_data="cp3")
 				    ]]))
@@ -90,8 +90,8 @@ async def vip3(bot,update):
 async def cp1(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit  = 524288000
-	uploadlimit(int(user_id),524288000)
+	inlimit  = 1073741824
+	uploadlimit(int(user_id),1073741824)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED\nThe user can only use 100MB/day from Data qota")
@@ -101,8 +101,8 @@ async def cp1(bot,update):
 async def cp2(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 104857600
-	uploadlimit(int(user_id), 104857600)
+	inlimit = 2147483648
+	uploadlimit(int(user_id), 2147483648)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED Lv-2**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED to Level 2\nThe user can only use 100MB/day from Data qota")
@@ -123,9 +123,9 @@ async def cp3(bot,update):
 async def dft(bot,update):
 	id = update.message.reply_to_message.text.split("/resetpower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 1288490188
-	uploadlimit(int(user_id), 1288490188)
+	inlimit = 5368709120
+	uploadlimit(int(user_id), 5368709120)
 	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
-	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 1.2 GB renaming capacity ")
-	await bot.send_message(user_id,"Your Daily Data limit has been reset successsfully.\n\nCheck your plan here - /myplan\n- Contact Admin 🦋<a href='https://t.me/mRiderDM'>**LazyDeveloper**</a>🦋")
+	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 5 GB renaming capacity ")
+	await bot.send_message(user_id,"Your Daily Data limit has been reset successsfully.\n\nCheck your plan here - /myplan\n- Contact Admin 🦋<a href='https://t.me/ab0hii'>**Abhi**</a>🦋")

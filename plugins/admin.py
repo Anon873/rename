@@ -54,11 +54,11 @@ async def resetpower(bot, message):
 async def vip1(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit  = 10737418240
-	uploadlimit(int(user_id),10737418240)
+	inlimit  = 53687091200
+	uploadlimit(int(user_id), 53687091200)
 	usertype(int(user_id),"🪙 **SILVER**")
 	addpre(int(user_id))
-	await update.message.edit("Added successfully To Premium Upload limit 10 GB")
+	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
 	await bot.send_message(user_id,"Hey you are Upgraded To silver. check your plan here /myplan")
 	await bot.send_message(log_channel,f"⚡️ Plan Upgraded successfully 💥\n\nHey you are Upgraded To silver. check your plan here /myplan")
 
@@ -66,22 +66,22 @@ async def vip1(bot,update):
 async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit = 53687091200
-	uploadlimit(int(user_id), 53687091200)
+	inlimit = 107374182400
+	uploadlimit(int(user_id), 107374182400)
 	usertype(int(user_id),"💫 **GOLD**")
 	addpre(int(user_id))
-	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
+	await update.message.edit("Added successfully To Premium Upload limit 100 GB")
 	await bot.send_message(user_id,"Hey you are Upgraded To Gold. check your plan here /myplan")
 
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit = 107374182400
-	uploadlimit(int(user_id), 107374182400)
+	inlimit = 536870912000
+	uploadlimit(int(user_id), 536870912000)
 	usertype(int(user_id),"💎 **DIAMOND**")
 	addpre(int(user_id))
-	await update.message.edit("Added successfully To Premium Upload limit 100 GB")
+	await update.message.edit("Added successfully To Premium Upload limit 500 GB")
 	await bot.send_message(user_id,"Hey you are Upgraded To Diamond. check your plan here /myplan")
 
 # CEASE POWER MODE @LAZYDEVELOPER

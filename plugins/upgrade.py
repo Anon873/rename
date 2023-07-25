@@ -10,15 +10,15 @@ async def upgrade(bot,update):
 	
 	**🪙 Silver Tier 🪙** 
 	Daily  Upload  limit 50GB
-	Price Rs 20 inr /🌎 0.5$  per Month
+	Price ₹20 inr /🌎 0.5$  per Month
 	
 	**💫 Gold Tier 💫**
 	Daily Upload limit 100GB
-	Price Rs 50 inr /🌎 1$  per Month
+	Price ₹40 inr /🌎 1$  per Month
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 1000GB (Unlimited)
-	Price Rs 100 inr /🌎 2$  per Month
+	Daily Upload limit 500GB (Unlimited)
+	Price ₹69 inr /🌎 2$  per Month
 	
         Contact Admin for payment <a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> <a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a>"""
 	keybord = InlineKeyboardMarkup([[ 
@@ -36,15 +36,15 @@ async def upgradecm(bot,message):
 	
 	**🪙 Silver Tier 🪙** 
 	Daily  Upload  limit 50GB
-	Price Rs 20 inr /🌎 0.5$ per Month
+	Price ₹20 inr /🌎 0.5$ per Month
 	
 	**💫 Gold Tier 💫**
 	Daily Upload limit 100GB
-	Price Rs 50 ind /🌎 1$ per Month
+	Price ₹40 inr /🌎 1$ per Month
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 1000GB (Unlimited)
-	Price Rs 100 inr /🌎 2$  per Month
+	Daily Upload limit 500GB (Unlimited)
+	Price ₹69 inr /🌎 2$  per Month
 	
 	Contact Admin for payment <a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> <a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a>"""
 	keybord = InlineKeyboardMarkup([[ 

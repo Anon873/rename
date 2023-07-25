@@ -46,7 +46,7 @@ async def upgradecm(bot,message):
 	Daily Upload limit 1000GB (Unlimited)
 	Price Rs 100 inr /🌎 2$  per Month
 	
-	Contact Admin for payment <a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> <a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a>""""""
+	Contact Admin for payment <a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> <a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a>"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/ab0hii")], 
         			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),

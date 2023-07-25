@@ -13,20 +13,16 @@ async def upgrade(bot,update):
 	Price Rs 20 inr /🌎 0.5$  per Month
 	
 	**💫 Gold Tier 💫**
-	Daily Upload limit 50GB
+	Daily Upload limit 100GB
 	Price Rs 50 inr /🌎 1$  per Month
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 100GB
+	Daily Upload limit 1000GB (Unlimited)
 	Price Rs 100 inr /🌎 2$  per Month
 	
-	
-	Pay Using Upi I'd ```7808912076@paytm```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin @mRiderDM"""
+        Contact Admin for payment <a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> <a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a>"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiderDM")], 
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/ab0hii")], 
         			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
         			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
@@ -35,28 +31,24 @@ async def upgrade(bot,update):
 @Client.on_message(filters.private & filters.command(["upgrade"]))
 async def upgradecm(bot,message):
 	text = """**Free Plan User**
-	Daily  Upload limit 1.2GB
-	Price 0
+	Daily  Upload limit 10GB
+	(Free hai sur)
 	
 	**🪙 Silver Tier 🪙** 
-	Daily  Upload  limit 10GB
-	Price Rs 66  ind /🌎 0.8$  per Month
+	Daily  Upload  limit 50GB
+	Price Rs 20 inr /🌎 0.5$ per Month
 	
 	**💫 Gold Tier 💫**
-	Daily Upload limit 50GB
-	Price Rs 100  ind /🌎 1.2$  per Month
+	Daily Upload limit 100GB
+	Price Rs 50 ind /🌎 1$ per Month
 	
 	**💎 Diamond 💎**
-	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
+	Daily Upload limit 1000GB (Unlimited)
+	Price Rs 100 inr /🌎 2$  per Month
 	
-	
-	Pay Using Upi I'd ```7808912076@paytm```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin @mRiderDM"""
+	Contact Admin for payment <a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> <a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a>""""""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiDerDM")], 
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/ab0hii")], 
         			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
         			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)

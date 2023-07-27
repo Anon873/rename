@@ -6,6 +6,7 @@ from pyrogram.types import (
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from helper.database import *
+from config import Config
 import os
 import random
 from PIL import Image

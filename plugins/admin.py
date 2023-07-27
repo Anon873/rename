@@ -35,16 +35,16 @@ async def buypremium(bot, message):
 @Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["ceasepower"]))
 async def ceasepremium(bot, message):
 	await message.reply_text(" POWER CEASE MODE", quote=True, reply_markup=InlineKeyboardMarkup([
-		           [InlineKeyboardButton("•× Limit 1Gb ×•", callback_data="cp1"),
-				    InlineKeyboardButton("•× Limit 2Gb ×•", callback_data="cp2")
+		           [InlineKeyboardButton("•Limit 1Gb•", callback_data="cp1"),
+				    InlineKeyboardButton("•Limit 2Gb•", callback_data="cp2")
 				   ], [
-				    InlineKeyboardButton("•••× CEASE ALL POWER ×•••", callback_data="cp3")
+				    InlineKeyboardButton("•CEASE ALL POWER •", callback_data="cp3")
 				    ]]))
 
 
 @Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["resetpower"]))
 async def resetpower(bot, message):
-	    await message.reply_text(text=f"Do you really want to reset daily limit to default data limit 1.2GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
+	    await message.reply_text(text=f"Do you really want to reset daily limit to default data limit 5GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
 		           [InlineKeyboardButton("• YES ! Set as Default •",callback_data = "dft")],
 				   [InlineKeyboardButton("❌ Cancel ❌",callback_data = "cancel")]
 				   ]))

@@ -2,7 +2,6 @@ import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from helper.database import db
-from config import Config
 ABHI_PIC = "https://te.legra.ph/file/f02ef85e427fc4c775bf9.jpg"
 
 

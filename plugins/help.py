@@ -47,7 +47,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton("ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ & ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ", callback_data="custom")
                 ],[
                 InlineKeyboardButton("ᴛʜᴜᴍʙɴᴀɪʟ", callback_data="thumb"),
-                InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", callback_data="rename1")
+                InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", callback_data="dev")
                 ],[
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "help")
@@ -69,7 +69,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "pvtstart")
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "help")
             ]])          
         )
     elif data == "apk":
@@ -129,7 +129,7 @@ class Txt(object):
     APK_TXT = "ᴏɴʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴛᴏ ɢᴇᴛ ꜱᴜʙɪꜱᴄʀɪᴘᴛɪᴏɴ. \n\n<a href=https://t.me/it_was_abhi>ᴀʙʜɪ</a> \n<a href=https://t.me/Minato_Bruh>ᴍɪɴᴀᴛᴏ</a> \n\nɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇꜱᴛɪᴏɴꜱ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜɪꜱ ʙᴏᴛ ᴋɪɴᴅʟʏ ᴀꜱᴋ <a href=https://t.me/it_was_abhi>ᴍʏ ᴅᴀᴅ</a>"
   
     HELP_TXT = "ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ.\nᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ [Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](https://t.me/Shadowsupportx)\n\nᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : `/`"
-
+    DEV_TXT = "FUCK OFF"
     PROGRESS_BAR = """<b>\n 
 ➻ ᴘʀᴏɢʀᴇss ʙᴀʀ 
 » Sɪᴢᴇ: {1} | {2}

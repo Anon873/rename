@@ -4,7 +4,6 @@ import asyncio
 from pyrogram import Client, filters
 from helper.database import getid, delete
 import time
-from config import Config
 ADMIN = int(os.environ.get("ADMIN", 6095755800))
 
 

@@ -44,10 +44,10 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ", callback_data="custom")
+                InlineKeyboardButton("ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ & ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ", callback_data="custom")
                 ],[
                 InlineKeyboardButton("ᴛʜᴜᴍʙɴᴀɪʟ", callback_data="thumb"),
-                InlineKeyboardButton("ʀᴇɴᴀᴍᴇ ꜰɪʟᴇ", callback_data="rename")
+                InlineKeyboardButton("ᴘʀᴇᴍɪᴜᴍ", callback_data="rename1")
                 ],[
                 InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data = "close"),
                 InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "help")
@@ -81,7 +81,7 @@ async def cb_handler(client, query: CallbackQuery):
                 InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "start")
             ]])          
         )
-    elif data == "rename":
+    elif data == "rename1":
         await query.message.edit_text(
             text=Txt.REX_TXT,
             disable_web_page_preview=True,
@@ -137,7 +137,7 @@ class Txt(object):
 » 🚀 Sᴩᴇᴇᴅ: {3}/s
 » ⏰️ Eᴛᴀ: {4} </b>"""
 
-    REX_TXT = "✏️ ʜᴏᴡ ᴛᴏ ʀᴇɴᴀᴍᴇ ᴀ ꜰɪʟᴇ  \n\nꜱᴇɴᴅ ᴀɴʏ ꜰɪʟᴇ ᴀɴᴅ ᴛʏᴘᴇ ɴᴇᴡ ꜰɪʟᴇ ɴᴀᴍᴇ. \n\nᴀɴᴅ ꜱᴇʟᴇᴄᴛ ᴛʜᴇ ꜰᴏʀᴍᴀᴛ [ ᴅᴏᴄᴜᴍᴇɴᴛ, ᴠɪᴅᴇᴏ, ᴀᴜᴅɪᴏ ]."
+    REX_TXT = "✏️ Working on this"
     REX2_TXT = "📑ʜᴏᴡ ᴛᴏ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ. \n\n/set_caption : ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ. \n\n/see_caption : ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴠɪᴇᴡ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ. \n\n/del_caption : ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ. \n\nᴇxᴀᴍᴘʟᴇ -  \n/set_caption 📕 ꜰɪʟᴇ ɴᴀᴍᴇ : {ꜰɪʟᴇɴᴀᴍᴇ} \n💾 ꜱɪᴢᴇ : {ꜰɪʟᴇꜱɪᴢᴇ} \n⏰ ᴅᴜʀᴀᴛɪᴏɴ: {ᴅᴜʀᴀᴛɪᴏɴ} \n\n✏️ ʜᴏᴡ ᴛᴏ ʀᴇɴᴀᴍᴇ ᴀ ꜰɪʟᴇ  \n\nꜱᴇɴᴅ ᴀɴʏ ꜰɪʟᴇ ᴀɴᴅ ᴛʏᴘᴇ ɴᴇᴡ ꜰɪʟᴇ ɴᴀᴍᴇ. \n\nᴀɴᴅ ꜱᴇʟᴇᴄᴛ ᴛʜᴇ ꜰᴏʀᴍᴀᴛ [ ᴅᴏᴄᴜᴍᴇɴᴛ, ᴠɪᴅᴇᴏ, ᴀᴜᴅɪᴏ ]."
 
 

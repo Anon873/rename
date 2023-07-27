@@ -5,7 +5,6 @@ from pyrogram.types import (
 from helper.database import find_one, used_limit
 from helper.database import daily as daily_
 import datetime
-from config import Config
 from datetime import timedelta, date, datetime
 from datetime import date as date_
 from helper.progress import humanbytes

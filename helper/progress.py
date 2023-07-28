@@ -29,7 +29,7 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
             estimated_total_time if estimated_total_time != '' else '0 s'
         )
 
-        follow_button = InlineKeyboardButton("🦋 Follow 🦋", url="https://t.me/CinemaVenoOfficial")
+        follow_button = InlineKeyboardButton("🦋 Follow 🦋", url="https://t.me/All_hindi_anime")
         cancel_button = InlineKeyboardButton("⨳ C L Ф S Ξ ⨳", callback_data="cancel")
 
         try:
